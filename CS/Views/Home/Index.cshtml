@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    function OnLoadingPanelInit(s, e) {
+        s.Show();
+    }
+    function OnLabelInit(s, e) {
+        //Hide
+        //lp.Hide();
+
+        //Hide After Timeout
+        setTimeout(function () {
+            lp.Hide();
+        }, 3000);
+    }
+</script>
+
+@*Loading Panel*@
+@Html.DevExpress().LoadingPanel(settings => {
+    settings.Name = "lp";
+    settings.Modal = true;
+    settings.ClientSideEvents.Init = "OnLoadingPanelInit";
+}).GetHtml()
+@*Loading Panel*@
+
+<b>VIEW CONTENT HERE</b>
+
+@*Last DevExpress Object*@
+@Html.DevExpress().Label(settings => {
+    settings.Name = "lbl";
+    settings.Properties.ClientSideEvents.Init = "OnLabelInit";
+}).GetHtml()
+@*Last DevExpress Object*@
