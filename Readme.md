@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Global.asax.cs](./CS/Global.asax.cs) (VB: [Global.asax.vb](./VB/Global.asax.vb))
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # How to show LoadingPanel on View startup
 
 
