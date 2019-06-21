@@ -5,6 +5,9 @@
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # How to show LoadingPanel on View startup
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4057)**
+<!-- run online end -->
 
 
 <p>This example is an ASP.NET MVC version of the <a href="https://www.devexpress.com/Support/Center/p/E4013">E4013: How to show ASPxLoadingPanel on page startup</a> solution.<br />
