@@ -3,22 +3,36 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4057)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Global.asax.cs](./CS/Global.asax.cs) (VB: [Global.asax.vb](./VB/Global.asax.vb))
-* [Index.cshtml](./CS/Views/Home/Index.cshtml)
-<!-- default file list end -->
-# How to show LoadingPanel on View startup
+# Loading Panel for ASP.NET MVC - How to show a loading panel on View load
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e4057/)**
 <!-- run online end -->
 
+This example demonstrates how to show [LoadingPanel](https://docs.devexpress.com/AspNetMvc/11423/components/docking-and-popups/loading-panel) when a View is loaded. 
 
-<p>This example is an ASP.NET MVC version of the <a href="https://www.devexpress.com/Support/Center/p/E4013">E4013: How to show ASPxLoadingPanel on page startup</a> solution.<br />
-It illustrates how to show MVC LoadingPanel when View is loaded.</p><p>Since there is no MVC Extension for the ASPxGlobalEvents component yet, it is possible to emulate the "global init" state by handling the Init event of the last DevExpress MVC Extension of the View.</p><p><strong>See Also:</strong><br />
-<a href="https://www.devexpress.com/Support/Center/p/E4013">E4013: How to show ASPxLoadingPanel on page startup</a></p>
+## Implementation Details
 
-<br/>
+Call the panel's client [Show](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Show) method in the `Init` event handler of the first DevExpress MVC Extension of the View to show a loading panel when client-side objects start initializing.
 
+```jscript
+function OnLoadingPanelInit(s, e) {
+    s.Show();
+}
+```
 
+To hide the loading panel when all client-side objects are already initialized, call the panel's client [Hide](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Hide) method in the `Init` event handler of the last DevExpress MVC Extension of the View.
+
+```jscript
+function OnLabelInit(s, e) {
+    lp.Hide();
+}
+```
+
+## Files to Review
+
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+
+## More Examples
+
+* [Loading Panel for ASP.NET Web Forms - How to show a loading panel on page load](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
