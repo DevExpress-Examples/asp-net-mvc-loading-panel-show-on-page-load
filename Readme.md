@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Loading Panel for ASP.NET MVC - How to show a loading panel on View load
+# Loading Panel for ASP.NET MVC - How to show a loading panel when a page is loading
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e4057/)**
 <!-- run online end -->
@@ -12,7 +12,7 @@ This example demonstrates how to show [LoadingPanel](https://docs.devexpress.com
 
 ## Implementation Details
 
-Call the panel's client [Show](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Show) method in the `Init` event handler of the first DevExpress MVC Extension of the View to show a loading panel when client-side objects start initializing.
+Call the [ASPxClientLoadingPanel.Show](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Show) method in the `Init` event handler of the first DevExpress MVC Extension of the View to show a loading panel when client-side objects start initializing.
 
 ```jscript
 function OnLoadingPanelInit(s, e) {
@@ -20,7 +20,7 @@ function OnLoadingPanelInit(s, e) {
 }
 ```
 
-To hide the loading panel when all client-side objects are already initialized, call the panel's client [Hide](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Hide) method in the `Init` event handler of the last DevExpress MVC Extension of the View.
+To hide the loading panel when all client-side objects are already initialized, call the [ASPxClientLoadingPanel.Hide](https://docs.devexpress.com/AspNet/js-ASPxClientLoadingPanel.Hide) method in the `Init` event handler of the last DevExpress MVC Extension of the View.
 
 ```jscript
 function OnLabelInit(s, e) {
@@ -34,4 +34,4 @@ function OnLabelInit(s, e) {
 
 ## More Examples
 
-* [Loading Panel for ASP.NET Web Forms - How to show a loading panel on page load](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
+* A [Loading Panel for ASP.NET Web Forms - How to show a loading panel when a page is loading](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
