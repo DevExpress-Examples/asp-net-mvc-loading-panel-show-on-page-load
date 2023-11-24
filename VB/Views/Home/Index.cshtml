@@ -13,22 +13,19 @@
     }
 </script>
 
-
 @*Loading Panel*@
-@Html.DevExpress().LoadingPanel( _
-    Sub(settings)
-            settings.Name = "lp"
-            settings.Modal = True
-            settings.ClientSideEvents.Init = "OnLoadingPanelInit"
-    End Sub).GetHtml()
+@Html.DevExpress().LoadingPanel(settings => {
+    settings.Name = "lp";
+    settings.Modal = true;
+    settings.ClientSideEvents.Init = "OnLoadingPanelInit";
+}).GetHtml()
 @*Loading Panel*@
 
 <b>VIEW CONTENT HERE</b>
 
 @*Last DevExpress Object*@
-@Html.DevExpress().Label( _
-    Sub(settings)
-            settings.Name = "lbl"
-            settings.Properties.ClientSideEvents.Init = "OnLabelInit"
-    End Sub).GetHtml()
+@Html.DevExpress().Label(settings => {
+    settings.Name = "lbl";
+    settings.Properties.ClientSideEvents.Init = "OnLabelInit";
+}).GetHtml()
 @*Last DevExpress Object*@
