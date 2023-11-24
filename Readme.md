@@ -34,4 +34,4 @@ function OnLabelInit(s, e) {
 
 ## More Examples
 
-* A [Loading Panel for ASP.NET Web Forms - How to show a loading panel when a page is loading](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
+* [A Loading Panel for ASP.NET Web Forms - How to show a loading panel when a page is loading](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
