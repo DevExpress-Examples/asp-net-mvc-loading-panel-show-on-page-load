@@ -4,9 +4,6 @@
 <!-- default badges end -->
 
 # Loading Panel for ASP.NET MVC - How to show a loading panel when a page is loading
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4057/)**
-<!-- run online end -->
 
 This example demonstrates how to show [LoadingPanel](https://docs.devexpress.com/AspNetMvc/11423/components/docking-and-popups/loading-panel) when a View is loaded. 
 
