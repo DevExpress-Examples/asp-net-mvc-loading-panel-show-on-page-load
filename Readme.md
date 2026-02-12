@@ -35,7 +35,7 @@ function OnLabelInit(s, e) {
 
 * [A Loading Panel for ASP.NET Web Forms - How to show a loading panel when a page is loading](https://github.com/DevExpress-Examples/asp-net-web-forms-loading-panel-display-control-on-page-load)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-loading-panel-show-on-page-load&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-loading-panel-show-on-page-load&~~~was_helpful=no)
 
